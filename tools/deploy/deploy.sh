@@ -16,4 +16,4 @@ fi
 
 mv dist bundle
 
-git push origin `git subtree split --prefix bundle master`:gh-pages --force
+git subtree push --prefix dist $remote master
