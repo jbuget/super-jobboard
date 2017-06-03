@@ -14,4 +14,4 @@ if [ ! `git remote | grep "$remote"` ]; then
     echo -e "Added remote $remote with url \"https://git.heroku.com/super-jobboard-$environment.git\""
 fi
 
-git subtree push --prefix dist $remote master
+git push $remote `git subtree split --prefix dist master`:master --force
