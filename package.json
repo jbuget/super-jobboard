@@ -12,8 +12,8 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
-    "deploy:staging": "npm run build && git subtree push --prefix dist app-staging master",
-    "deploy:production": "npm run build && git subtree push --prefix dist app-production master"
+    "deploy:staging": "npm run build && tools/deploy/deploy.sh staging",
+    "deploy:production": "npm run build && tools/deploy/deploy.sh production"
   },
   "dependencies": {
     "vue": "^2.3.3",
