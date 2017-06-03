@@ -1,8 +1,10 @@
 #! /bin/bash
 
 environment="staging"
+branch="dev"
 if [ $1 ] && [ $1 == "production" ]; then
   environment="production"
+  branch="master"
 fi
 
 remote="app-$environment"
@@ -14,4 +16,5 @@ if [ ! `git remote | grep "$remote"` ]; then
     echo -e "Added remote $remote with url \"https://git.heroku.com/super-jobboard-$environment.git\""
 fi
 
-git push $remote `git subtree split --prefix dist master`:master --force
+
+git push "$remote" `git subtree split --prefix dist "$branch"`:"$branch" --force
