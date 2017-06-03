@@ -17,4 +17,4 @@ if [ ! `git remote | grep "$remote"` ]; then
 fi
 
 
-git push "$remote" `git subtree split --prefix dist "$branch"`:"$branch" --force
+git push heroku `git subtree split --prefix dist "$branch"`:"$branch" --force
