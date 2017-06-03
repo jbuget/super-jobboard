@@ -7,13 +7,14 @@
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
-    "build": "node build/build.js && cp tools/deploy/express/* dist",
+    "build": "node build/build.js",
+    "build:heroku": "npm run build && cp tools/deploy/express/* dist",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
-    "deploy:staging": "npm run build && tools/deploy/deploy.sh staging",
-    "deploy:production": "npm run build && tools/deploy/deploy.sh production"
+    "deploy:staging": "npm run build:heroku && tools/deploy/deploy.sh staging",
+    "deploy:production": "npm run build:heroku && tools/deploy/deploy.sh production"
   },
   "dependencies": {
     "vue": "^2.3.3",
