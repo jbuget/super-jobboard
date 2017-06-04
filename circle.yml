@@ -9,13 +9,9 @@ machine:
 deployment:
   staging:
     branch: dev
-    heroku:
-      appname: super-jobboard-staging
     commands:
       - npm run deploy:staging
   production:
     branch: master
-    heroku:
-      appname: super-jobboard-production
     commands:
       - npm run deploy:production
