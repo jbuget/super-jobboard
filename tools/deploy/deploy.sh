@@ -17,4 +17,10 @@ if [ ! `git remote | grep "$remote"` ]; then
 fi
 
 
-git push heroku `git subtree split --prefix dist "$branch"`:"$branch" --force
+git checkout "$branch"
+git pull "$branch"
+npm run build:heroku
+git add dist
+git commit -m "Prepare release on $environment"
+git push
+git subtree push --prefix dist "$remote" master
