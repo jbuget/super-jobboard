@@ -7,6 +7,27 @@ The 2 applications were generated thanks to the corresponding generator:
 - express-generator for the Express API
 - vue-cli for the Vue.js app
 
+## Getting started
+
+``` bash
+# get project sources
+git clone git@github.com:jbuget/super-jobboard.git
+cd super-jobboard
+
+# install dependencies
+npm install
+
+# run tests
+npm test
+
+# build Vue.js  client for production with minification
+npm run build
+
+# start the application
+npm start
+```
+
+
 ## Project structure
 
 ```
