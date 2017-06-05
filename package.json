@@ -13,7 +13,7 @@
     "start": "node server/bin/www",
     "test": "",
     "lint": "",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "(cd client && npm run build)"
   },
   "engines": {
     "node": ">= 7.0.0",
