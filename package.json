@@ -1,7 +1,7 @@
 {
   "name": "super-jobboard",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "A full-stack Vue.js / Express project",
   "author": "Jérémy Buget <jbuget@gmail.com>",
   "private": true,
   "scripts": {
@@ -9,10 +9,13 @@
     "install:client": "(cd client && npm install)",
     "install:server": "(cd server && npm install)",
     "install": "run-p install:client install:server",
-    "dev": "",
     "start": "node server/bin/www",
-    "test": "",
-    "lint": "",
+    "test:client": "(cd client && npm test)",
+    "test:server": "(cd server && npm test)",
+    "test": "run-p test:client test:server",
+    "lint:client": "(cd client && npm run lint)",
+    "lint:server": "(cd server && npm run lint)",
+    "lint": "run-p lint:client lint:server",
     "heroku-postbuild": "(cd client && npm run build)"
   },
   "engines": {

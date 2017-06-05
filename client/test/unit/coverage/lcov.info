@@ -1,5 +1,5 @@
 TN:
-SF:/Users/octo-jbu/Works/jbuget/super-jobboard/src/components/Hello.vue
+SF:/Users/octo-jbu/Works/jbuget/super-jobboard/client/src/components/Hello.vue
 FNF:0
 FNH:0
 DA:27,1
@@ -9,7 +9,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/octo-jbu/Works/jbuget/super-jobboard/src/App.vue
+SF:/Users/octo-jbu/Works/jbuget/super-jobboard/client/src/App.vue
 FNF:0
 FNH:0
 LF:0
@@ -18,7 +18,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/octo-jbu/Works/jbuget/super-jobboard/src/router/index.js
+SF:/Users/octo-jbu/Works/jbuget/super-jobboard/client/src/router/index.js
 FNF:0
 FNH:0
 DA:5,1

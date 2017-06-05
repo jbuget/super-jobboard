@@ -9,6 +9,7 @@ The 2 applications were generated thanks to the corresponding generator:
 
 ## Project structure
 
+```
 client                   → Vue.js application sources
  └ build                 → 
  └ config                → 
@@ -24,12 +25,11 @@ client                   → Vue.js application sources
     └ main.js            → 
  └ static                → 
  └ test                  → 
-    └ e2e                → 
-    └ unit               → 
- └ .babelrc              → 
- └ .editorconfig         → 
+    └ e2e                → E2E tests based on Nigthwatch framework
+    └ unit               → Unit tests based on Mocha
+ └ .babelrc              → Babel configuration file
  └ .eslintignore         → 
- └ .eslintrc.js          → 
+ └ .eslintrc.js          → ESLint configuration file 
  └ .postcssrc.js         → 
  └ index.html            → 
  └ package.json          → Client app build script
@@ -40,13 +40,15 @@ server                   → Express API sources
     └ lib                → 
     └ models             → Application business layer
     └ routes             → Application routes
- └ test                  → 
- └ app.js                → 
+ └ test                  → Test sources
+ └ app.js                → Express server definition
  └ package.json          → Server app build script
-.gitignore               → 
-circle.yml               → 
+.editorconfig            → EditorConfig configuration file 
+.gitignore               → Git configuration file for ignored files
+circle.yml               → CircleCI configuration file
 package.json             → Application build script
 README.md                → 
+```
 
 ## Server
 
