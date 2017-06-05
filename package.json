@@ -18,7 +18,11 @@
     "lint:client": "(cd client && npm run lint)",
     "lint:server": "(cd server && npm run lint)",
     "lint": "run-p lint:client lint:server",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "release:help": "./tools/release help",
+    "release:prepare": "./tools/release prepare",
+    "release:publish": "./tools/release publish",
+    "release:rollback": "./tools/release rollback"
   },
   "engines": {
     "node": ">= 7.0.0",
