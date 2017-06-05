@@ -1,11 +1,11 @@
 # Super JobBoard
 
-This is an example of a full-stack application with Express as main back-end technology and Vue.js as front-end one's, automatically deployed on Heroku via CircleCI.
+This is an example of a full-stack application with [Express](http://expressjs.com/) as main back-end technology and [Vue.js](https://vuejs.org) as front-end one's, automatically deployed on [Heroku](http://super-jobboard-staging.herokuapp.com) via [CircleCI](https://circleci.com/gh/jbuget/super-jobboard).
  
 The 2 applications were generated thanks to the corresponding generator:
 
-- express-generator for the Express API
-- vue-cli for the Vue.js app
+- [express-generator](http://expressjs.com/fr/starter/generator.html) for the Express API
+- [vue-cli](https://github.com/vuejs/vue-cli) for the Vue.js app
 
 ## Getting started
 
