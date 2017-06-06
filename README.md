@@ -73,5 +73,19 @@ README.md                →
 
 ## Server
 
+
 ## Client
+
+## Secured API
+
+The project implements a little layer of security thanks to JSON Web Token (JWT) specification.
+
+There are 3 routes :
+
+- /token ()open route)
+- /api/protected (protected route)
+- /api/users (protected route)
+
+The protected routes require the header "Authorization some_generated_jwt_token_value" in the request.
+
 
