@@ -4,6 +4,7 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 var cors = require('cors');
 
+var auth = require('./src/routes/auth');
 var token = require('./src/routes/token');
 var protectedRoute = require('./src/routes/protected');
 var users = require('./src/routes/users');
@@ -29,6 +30,7 @@ app.use('/api', require('./src/middlewares/auth'));
 // add CORS support
 app.use(cors());
 
+app.use('/auth', auth);
 app.use('/token', token);
 app.use('/api/users', users);
 app.use('/api/protected', protectedRoute);
